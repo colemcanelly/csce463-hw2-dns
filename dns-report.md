@@ -223,7 +223,7 @@ Attempt 0 with 29 bytes... response in 4ms with 468 bytes
   ++ invalid record: RR value length stretches the answer beyond packet
 ```
 
-![image](./extra_credit_wireshark_2.png)
-![image](./extra_credit_wireshark.png)
+![image](/extra_credit_wireshark_2.png)
+![image](/extra_credit_wireshark.png)
 
 This endpoint on the server takes the default response (11 records in the `additional` name entries that are from the intro sequence to Star Wars: A New Hope), and randomly chooses a places among the records. It then enters 2 null bytes before "padding" the rest of the packet with "lol" until the length of the packet is 510 bytes in length. This would be pretty easy with a random number generator and knowing the current legnth of the packet.
